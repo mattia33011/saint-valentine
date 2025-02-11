@@ -1,0 +1,52 @@
+.container {
+  height: 100vh;
+  padding-top: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.round{
+  border-radius: 40px 40px 40px 40px;
+
+}
+.text-small{
+  background-color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  color: #ff2929;
+  font-weight: bolder;
+}
+
+.text-underline{
+  text-decoration: underline;
+}
+
+.text{
+  background-color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
+}
+.yes{
+  background-color: limegreen;
+  color: white;
+}
+
+.no{
+  background-color: red;
+  color: white;
+}
+.btn{
+  padding: 0.5rem 0.5rem;
+  width: 50%;
+  font-size: 1.2rem;
+}
+.buttons{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
