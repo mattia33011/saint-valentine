@@ -9,8 +9,17 @@ import {ActivatedRoute, RouterOutlet} from '@angular/router';
 })
 export class AppComponent {
   constructor(private route: ActivatedRoute) {
-    route.queryParamMap.subscribe(params => {this.name = params.get('name') ?? "Sophia"})
+    route.queryParamMap.subscribe(params => {
+      this.name = params.get('name') ?? "Sophia"
+      this.time = params.get('time') ?? "20:00"
+      this.place = params.get('place') ?? "Ristorante Mamima"
+      this.url = params.get('url') ?? "https://g.co/kgs/Rup357Q"
+
+    })
   }
+  time: string = ""
+  place: string = ""
+  url: string = ""
   name: string = ""
   title = 'saint-valentine';
   love = false
