@@ -1,0 +1,22 @@
+<div class="h-screen py-2 bg-primary gap-3 flex flex-col justify-items-center items-center">
+  @if (love) {
+  <img width="300px" class="gif" src="/heart_sophia.gif" alt="">
+    <h1 style="background-color: white; border-radius: 40px 40px 40px 40px;" class="text-center text-3xl px-4 py-5">
+      YUPPYYYYYYY !!!!!!! ❤️ <br>
+    </h1>
+    <a style="background-color: white; border-radius: 40px 40px 40px 40px;" class="text-lg  px-5 py-2 text-red-500 font-medium" href="https://g.co/kgs/Rup357Q">📍 <span class="underline"> Ristorante Mamima</span> 20:00</a>
+} @else {
+    <h1 style="background-color: white; border-radius: 40px 40px 0px 40px;" class="text-xl px-3 py-2">
+      {{name}}, would you be my Valentine ?
+    </h1>
+
+    <img width="300px" class="gif" src="/sophia.gif" alt="">
+    <div class="flex gap-3 w-full">
+      <button #yesBtn  (click)="love = true" class="bg-lime-600 text-white rounded py-2 px-4 w-1/2 text-xl">Yes !!!</button>
+      <button #noBtn (click)="increaseButton(yesBtn, noBtn)" class="bg-red-500 text-white rounded py-2 px-4 w-1/2 text-xl">No :(</button>
+    </div>
+    <div>
+    </div>
+
+}
+</div>
